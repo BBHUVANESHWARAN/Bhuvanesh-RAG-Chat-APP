@@ -1,30 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔍 Bhuvanesh RAG Chat App
 
-## Getting Started
+A full-stack AI-powered Retrieval-Augmented Generation (RAG) chat application that uses:
 
-First, run the development server:
+- 🧠 **Google Gemini API** for question answering
+- 🌐 **Weaviate** for vector semantic search
+- 📄 **MongoDB Atlas** for storing chat history with timestamps
+- ⚡ **Next.js + TypeScript** frontend and API
+- ☁️ **Deployed on Vercel**, connected via GitHub
+
+---
+
+## 🚀 Features
+
+✅ Scrape content from public web URLs  
+✅ Embed scraped text into Weaviate (via Gemini)  
+✅ Ask natural language questions  
+✅ Retrieve most relevant context using semantic search  
+✅ Generate final answers using Gemini LLM  
+✅ Store chat history to MongoDB Atlas with timestamps  
+✅ Export chat history to JSON  
+✅ Auto-deploy via GitHub → Vercel integration
+
+---
+
+## 🧠 Technologies
+
+| Stack      | Tech                       |
+|------------|----------------------------|
+| Frontend   | React + Next.js + Tailwind |
+| Backend    | Node.js (API Routes)       |
+| Embedding  | Google Gemini API          |
+| Vector DB  | Weaviate Cloud             |
+| Chat DB    | MongoDB Atlas              |
+| Hosting    | Vercel                     |
+
+---
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/BBHUVANESHWARAN/Bhuvanesh-RAG-Chat-APP.git
+cd Bhuvanesh-RAG-Chat-APP
+npm install
+
+**➕ Create .env.local**
+'''
+GEMINI_API_KEY=your_gemini_api_key
+WEAVIATE_URL=https://your-weaviate-instance.weaviate.network
+WEAVIATE_API_KEY=your_weaviate_api_key
+MONGODB_URI=mongodb+srv://your_user:your_pass@cluster.mongodb.net/ragchat
+'''
+**💻 Usage  **
+'''
 npm run dev
-```
+'''
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Add one or more URLs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Click "Scrape & Embed"
 
-## Learn More
+Ask a question like: What is artificial intelligence?
 
-To learn more about Next.js, take a look at the following resources:
+Click “Generate Final Answer”
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+View or export full chat history
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**📁 Project Structure**
 
-## Deploy on Vercel
+'''
+/components         → UI components (ChatWindow, URLInput)
+/pages/api          → API routes for scrape, embed, query, answer, saveChat
+/lib                → Helpers for Gemini, Mongo, Weaviate
+/models             → TS types (optional)
+/public             → Static assets
+'''
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**🌍 Live Demo**
+🔗 https://bhuvanesh-rag-chat-app.vercel.app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**🙋‍♂️ Author**
+Made with 💻 and ☕ by Bhuvaneshwaran
+
+
