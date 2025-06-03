@@ -42,6 +42,7 @@ A full-stack AI-powered Retrieval-Augmented Generation (RAG) chat application th
 git clone https://github.com/BBHUVANESHWARAN/Bhuvanesh-RAG-Chat-APP.git
 cd Bhuvanesh-RAG-Chat-APP
 npm install
+'''
 
 **➕ Create .env.local**
 '''
@@ -50,11 +51,13 @@ WEAVIATE_URL=https://your-weaviate-instance.weaviate.network
 WEAVIATE_API_KEY=your_weaviate_api_key
 MONGODB_URI=mongodb+srv://your_user:your_pass@cluster.mongodb.net/ragchat
 '''
+
 **💻 Usage  **
 '''
 npm run dev
 '''
 
+Pro
 Then open: http://localhost:3000
 
 Add one or more URLs
