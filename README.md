@@ -42,7 +42,6 @@ A full-stack AI-powered Retrieval-Augmented Generation (RAG) chat application th
 git clone https://github.com/BBHUVANESHWARAN/Bhuvanesh-RAG-Chat-APP.git
 cd Bhuvanesh-RAG-Chat-APP
 npm install
-'''
 
 **➕ Create .env.local**
 '''
@@ -52,26 +51,20 @@ WEAVIATE_API_KEY=your_weaviate_api_key
 MONGODB_URI=mongodb+srv://your_user:your_pass@cluster.mongodb.net/ragchat
 '''
 
-**💻 Usage  **
+**💻 Usage**
 '''
 npm run dev
 '''
 
 Pro
 Then open: http://localhost:3000
-
 Add one or more URLs
-
 Click "Scrape & Embed"
-
 Ask a question like: What is artificial intelligence?
-
 Click “Generate Final Answer”
-
 View or export full chat history
 
 **📁 Project Structure**
-
 '''
 /components         → UI components (ChatWindow, URLInput)
 /pages/api          → API routes for scrape, embed, query, answer, saveChat
